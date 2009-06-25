@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>SBブックマーク<%#= controller.action_name %></title>
+    <%= stylesheet_link_tag 'scaffold' %>
+    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "tag_suggest" %>
+    <%= javascript_include_tag "my_bkma" %>
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+<script type="text/javascript">
+function get_tags(x,y,form_id_name){
+	var tags = new Array();
+	tags = eval(x);
+
+	var otherTags = new Array();
+	otherTags = eval(y);
+
+      tag_suggest_init(tags,otherTags,form_id_name);
+}
+</script>
+
+
+</head>
+
+<% if request.path == edit_urllist_path(params[:id]) then %>
+   <body onLoad = "get_tags(<%=h @my_tags %>,<%=h @other_tags %>,'edit_urllist_<%=params[:id]%>')">
+<% elsif request.path == new_urllist_path then %>
+   <body onLoad = "get_tags(<%=h @my_tags %>,[],'new_urllist')">
+<% else %>
+   <body>
+<% end %>
+
+  <div id="container" class="clear">
+	<%= render :partial=>"layouts/login" %>
+    <div id="main-wide" class="clear">
+ 	<span id="notice"><%= flash[:notice] %></span>
+	<%= yield  %>
+    </div>
+  </div>
+
+
+</body>
+</html>

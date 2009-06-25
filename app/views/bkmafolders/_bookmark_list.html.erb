@@ -1,0 +1,85 @@
+
+<%= will_paginate @bookmarklists %>
+
+<% for bookmarklist in @bookmarklists %>
+
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+
+			<dl class="bookmarklist" >
+			    <dt class="bookmark"><%= link_to bookmarklist.urllist.title,bookmarklist.urllist.url,:class =>"domain",:target=>"_blank" %></dt>
+			    <dd>
+			      <dl>
+				  <dd class="domain"><%= link_to nil,bookmarklist.urllist.url,:class =>"domain",:target=>"_blank" %></dd>
+			          <dd class="users">
+			             <% for users_count in @users_count %>
+			                <% if bookmarklist.urllist.id==users_count.urllist_id then %>
+			                   <em><%=users_count.users_count_num %> user</em>
+			                <% end %>
+			             <% end %>
+			          </dd>
+
+				  <dt class="timestamp"><span class="label">追加日</span></dt>
+				  <dd class="timestamp">
+					<%=h bookmarklist.urllist.updated_at.strftime("%y/%m/%d %H:%M") %>
+				  </dd>
+
+			          <% if $prefix + request.path != urllist_path(params[:id]) then %>
+				    <dd class="comment">
+					<%= link_to(image_tag("/images/detail.gif",:alt=>"詳細"),urllist_path(bookmarklist.urllist.id) ,:method=>:get) %>
+			  	    </dd>
+			          <% end %>
+
+				<% if params[:id] then %>
+			          <% if session[:login]==URI.decode(params[:id]) then %>
+			            <dd class="edit">
+					<%= link_to(image_tag("/images/edit.gif",:alt=>"編集"),edit_urllist_path(bookmarklist.urllist.id) ,:method=>:get) %>
+				    </dd>
+
+			            <dd class="delete">
+					<%= link_to(image_tag("/images/delete.gif",:alt=>"削除"),urllist_path(bookmarklist.urllist.id) ,:method=>:delete,:confirm=>"削除してもいいですか？") %>
+				    </dd>
+			          <% end %>
+				<% end %>
+
+			      </dl>
+			    </dd>
+
+			    <dd class="comment">
+			      <%=h_each_other_comment(bookmarklist,session[:login],0,"自分のコメント：")%><br>
+			      <%=h_each_other_comment(bookmarklist,session[:login],1,"みんなのコメント：")%>
+			    </dd>
+			</dl><!--end bookmarklist-->
+
+
+		  </div>
+		</div>
+	      </div>
+	    </div><!--end middle-->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+
+
+<% end %>
+
+<%= will_paginate @bookmarklists %>

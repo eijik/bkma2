@@ -1,0 +1,9 @@
+<h2>ブックマークチェック</h2>
+既にアドレスが登録されているかチェックします。
+
+<% form_for @urllist,:url=>new_urllist_path ,:html=>{:onSubmit => "return checkNull( document.forms['new_urllist'].elements['urllist_url'])"} do |f|  %>
+  <p><%= f.text_field :url %></p>
+  <p><%= f.submit "チェック"  %></p>
+<% end %>
+
+<%= link_to 'みんなのブックマークへ' , bkmafolders_path %>

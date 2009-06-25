@@ -1,0 +1,39 @@
+
+<h2>ブックマークの編集</h2>
+
+<b>URL:<%= link_to @urllist.url, @urllist.url %></b>
+
+<br>
+
+
+<% form_for @urllist  do |f| %>
+
+   <p>
+      <b>タイトル:</b>
+      <%= f.text_field  :title %>
+   </p>
+
+  <div class="tag-question">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ワードを[○△] で囲むとタグになります。<%= link_to "タグって何？",{:controller=>:helps ,:anchor=>"tag"}, :target => "_blank"   %>
+  </div>
+
+   <b>自分のコメント:</b>
+      <%= text_field_tag 'comment', @my_comments,:size=>80 %><br>
+   <div id="candidates_list"></div>
+
+   みんなのコメント:
+   <%= @other_commments %>
+
+
+   <div id="tags_completion"></div>
+   <div id="othertags_list"></div>
+   <div id="tags_list"></div>
+
+
+   <p><%= submit_tag "更新" %></p>
+
+<% end %>
+
+<br>
+<%= link_to '戻る',  bkmafolders_path %>
+
+

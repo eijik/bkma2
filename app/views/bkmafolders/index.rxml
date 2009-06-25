@@ -1,0 +1,32 @@
+
+xml.instruct! :xml, :version => "1.0", :encoding => "UTF-8"
+xml.rss('version' => '2.0') do
+  xml.channel do
+    xml.title "最近登録されたSBブックマーク"
+    xml.link (url_for(:controller => :bkmafolders, :action => :index, :only_path => false))
+#    xml.tag!("atom:id", url)
+    xml.description("aaa")
+    xml.language "ja-ja"
+    xml.ttl "40"
+    xml.pubDate(Time.now.strftime("%a, %d %b %Y %H:%M:%S %Z"))
+    xml.managingEditor("kosaki@softbrain.co.jp")
+    xml.generator("Bkma")
+    @bookmarklists.each do |m|
+      xml.item do
+#        xml.title("aaa")
+        xml.title(m.urllist.title)
+#        xml.tag!('atom:id', urllist_path(m.urllist.id))
+#        xml.guid(urllist_path(m.urllist.id), "isPermaLink" => 'false')
+        xml.pubDate(m.urllist.created_at)
+#        xml.tag!("atom:updated", m.urllist.updated_at)
+#        xml.tag!("atom:summary", m.urllist.id)
+#        xml.link("link")
+        xml.link(urllist_url(m.urllist.id))
+        xml.description(m.urllist.updated_at)
+#        xml.guid("guid")
+#        xml.guid(urllist_url(m.urllist.id))
+#        xml.author(m.urllist.create_person_name)
+      end
+    end
+  end
+end

@@ -1,0 +1,1631 @@
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:19:22) [GET]
+  Session ID: 331beab7c4424ffb55e3c39b23d51f70
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:19:23) [GET]
+  Session ID: 331beab7c4424ffb55e3c39b23d51f70
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.31200 (3 reqs/sec) | Rendering: 0.23400 (74%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:19:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.03100 (32 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:46) [GET]
+  Session ID: e05d961dd880c589d5090c4c2e3bc015
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+RuntimeError ([JsonParser] Syntax error):
+    /lib/simple-json.rb:74:in `parse'
+    /app/controllers/application.rb:62:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:19:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:20:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:20:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.21900 (4 reqs/sec) | Rendering: 0.14100 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:20:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:20:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:20:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:20:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.14000 (68%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:20:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDBjNDViMmM2N2MxM2U4ZjQwYWViZTdkMjZjODYy%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa10d910c0dd29673c00cc0de044ea30f65bd211
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:20:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.10900 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:20:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:20:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.50000 (2 reqs/sec) | Rendering: 0.12500 (25%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:20:50) [GET]
+  Session ID: cafc7a1dab9a3cb35109400025bbf6bb
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:20:50) [GET]
+  Session ID: cafc7a1dab9a3cb35109400025bbf6bb
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.23500 (4 reqs/sec) | Rendering: 0.21900 (93%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:20:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:20:58) [GET]
+  Session ID: 6638694adddb22ab29b3ef502562d97c
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.10900 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:20:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:20:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.34400 (2 reqs/sec) | Rendering: 0.29700 (86%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:21:01) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTg1N2UwZmQ5N2JlNjBlODY3MzY2NGNlNGNmNjNmZmMwIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--90c86b774ef4150062444131c34268a367eb8c26
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.04700 (100%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:21:05) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTg1N2UwZmQ5N2JlNjBlODY3MzY2NGNlNGNmNjNmZmMwIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--90c86b774ef4150062444131c34268a367eb8c26
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/user/logout
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fhelps]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:21:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:21:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.31300 (3 reqs/sec) | Rendering: 0.25000 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:21:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:21:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.10900 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:21:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:21:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.20300 (81%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:21:18) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTc0Y2Q4ODNmYWJiMzBkNmU0ZjcwNzBiMmI5ZjkyZGU1IgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--7a0480859fd563006881c95ab333ac5abe7edbfc
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/user/logout
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fbkmafolders]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:21:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:21:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.32800 (3 reqs/sec) | Rendering: 0.26600 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing HelpsController#index (for 127.0.0.1 at 2008-05-21 21:21:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/helps]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:21:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/helps
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fhelps]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:21:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:21:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:21:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.42200 (2 reqs/sec) | Rendering: 0.36000 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing HelpsController#index (for 127.0.0.1 at 2008-05-21 21:21:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/helps]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:21:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/helps
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fhelps]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:21:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://n0100:3000/helps?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.12500 (8 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/helps]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:21:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"helps", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.03100 (67%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:42:39) [GET]
+  Session ID: BAh7BzoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanAiCmZsYXNoSUM6%0AJ0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk%0AewA%3D--3b50b8b91507c275e0eb8a839a15ac371a146ad5
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/user/logout
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fhelps]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:42:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:42:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.29700 (3 reqs/sec) | Rendering: 0.23500 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:42:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:43:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:43:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.18800 (75%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:43:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:43:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.12500 (8 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:43:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:43:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.32900 (3 reqs/sec) | Rendering: 0.28200 (85%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:43:37) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTUxOWUyNzg0M2I0Njg1ODUzZDk3NGM3NDkzNWI1MjliIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c1f1d9aa41343b6ba64b532a5671c6872bd10fd2
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:43:40) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTUxOWUyNzg0M2I0Njg1ODUzZDk3NGM3NDkzNWI1MjliIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c1f1d9aa41343b6ba64b532a5671c6872bd10fd2
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/user/logout
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fhelps]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:43:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:43:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.29700 (3 reqs/sec) | Rendering: 0.25000 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing HelpsController#index (for 127.0.0.1 at 2008-05-21 21:43:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/helps]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:43:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/helps
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fhelps]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:43:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://n0100:3000/helps?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.10900 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/helps]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:43:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"helps", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.03100 (65%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:43:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:43:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.40600 (2 reqs/sec) | Rendering: 0.34300 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing HelpsController#index (for 127.0.0.1 at 2008-05-21 21:43:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/helps]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:43:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:43:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.29600 (3 reqs/sec) | Rendering: 0.25000 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing UrllistsController#show (for 127.0.0.1 at 2008-05-21 21:43:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"show", "id"=>"58", "controller"=>"urllists"}
+Rendering template within layouts/urllists
+Rendering urllists/show
+Completed in 0.14000 (7 reqs/sec) | Rendering: 0.10900 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/urllists/58]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:43:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/urllists/58"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/urllists/58
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Furllists%2F58]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:44:03) [GET]
+  Session ID: BAh7BzoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanAiCmZsYXNoSUM6%0AJ0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk%0AewA%3D--3b50b8b91507c275e0eb8a839a15ac371a146ad5
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/urllists/58"}
+Redirected to http://n0100:3000/urllists/58?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.10900 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/urllists/58]
+
+
+Processing UrllistsController#show (for 172.16.41.65 at 2008-05-21 21:44:03) [GET]
+  Session ID: BAh7BzoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanAiCmZsYXNoSUM6%0AJ0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk%0AewA%3D--3b50b8b91507c275e0eb8a839a15ac371a146ad5
+  Parameters: {"action"=>"show", "id"=>"58", "controller"=>"urllists", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/urllists
+Rendering urllists/show
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.04600 (74%) | DB: 0.00000 (0%) | 200 OK [http://n0100/urllists/58?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:44:05) [GET]
+  Session ID: BAh7BzoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanAiCmZsYXNoSUM6%0AJ0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk%0AewA%3D--3b50b8b91507c275e0eb8a839a15ac371a146ad5
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/urllists/58"}
+Redirected to http://d0069/user/logout
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Furllists%2F58]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:44:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:44:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.39100 (2 reqs/sec) | Rendering: 0.32900 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:44:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:44:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.09300 (10 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:44:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:44:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.37500 (2 reqs/sec) | Rendering: 0.28100 (74%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:44:15) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJWM3MTk2ZDJjNmJjZmUwNWY3NjhmYmZjMmVmOWY2YWNkIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--3a70c85ec07e85fad5c01971c6c6f9f46c0f26ed
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:44:17) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJWM3MTk2ZDJjNmJjZmUwNWY3NjhmYmZjMmVmOWY2YWNkIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--3a70c85ec07e85fad5c01971c6c6f9f46c0f26ed
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/user/logout
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fhelps]
+
+
+Processing BkmafoldersController#index (for 172.16.16.20 at 2008-05-21 21:44:29) [GET]
+  Session ID: 5d8429513a0449c47c4b4d6ced8b4135
+  Parameters: {"format"=>"rss", "action"=>"index", "controller"=>"bkmafolders"}
+Rendering bkmafolders/index.rxml
+Completed in 0.57800 (1 reqs/sec) | Rendering: 0.20300 (35%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders.rss]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:44:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:44:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.23400 (93%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:44:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:44:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://n0100:3000/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1
+Completed in 0.15600 (6 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/get_auth_info?cert=a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9&redirect_add=/bkmafolders]
+
+
+Processing BkmafoldersController#index (for 172.16.41.65 at 2008-05-21 21:44:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders", "login"=>"eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 172.16.41.65 at 2008-05-21 21:44:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+End of component rendering
+Completed in 0.46900 (2 reqs/sec) | Rendering: 0.40700 (86%) | DB: 0.00000 (0%) | 200 OK [http://n0100/bkmafolders?login=eca21720f2a41d25c1dc1676f33e10f99476b0f4e1edecb01dab60a7c91a67a1]
+
+
+Processing HelpsController#index (for 172.16.41.65 at 2008-05-21 21:44:34) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTg3MzNmNDg1MDgxYjI4NWQwNmNlMTE5NjIxNzc4YWRmIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c07e1f1ad8c90511c2c2dea5925deec292cc83ac
+  Parameters: {"action"=>"index", "controller"=>"helps"}
+Rendering template within layouts/application
+Rendering helps/index
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://n0100/helps]
+
+
+Processing ApplicationController#logout_login (for 172.16.41.65 at 2008-05-21 21:44:35) [GET]
+  Session ID: BAh7CDoKbG9naW4iG2tvc2FraUBzb2Z0YnJhaW4uY28uanA6DGNzcmZfaWQi%0AJTg3MzNmNDg1MDgxYjI4NWQwNmNlMTE5NjIxNzc4YWRmIgpmbGFzaElDOidB%0AY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c07e1f1ad8c90511c2c2dea5925deec292cc83ac
+  Parameters: {"action"=>"logout_login", "controller"=>"application", "redirect_add"=>"/helps"}
+Redirected to http://d0069/user/logout
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://n0100/logout_login?redirect_add=%2Fhelps]
+
+
+Processing BkmafoldersController#index (for 127.0.0.1 at 2008-05-21 21:44:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "controller"=>"bkmafolders"}
+Rendering template within layouts/application
+Rendering bkmafolders/index
+Start rendering component ({:controller=>"tags", :action=>"index"}): 
+
+
+Processing TagsController#index (for 127.0.0.1 at 2008-05-21 21:44:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"index", "id"=>nil, "controller"=>"tags"}
+Rendering tags/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+End of component rendering
+Completed in 0.32800 (3 reqs/sec) | Rendering: 0.26600 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/bkmafolders]
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2008-05-21 21:44:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzVjNjhiZDQ1MjA3NjA0NTk2ZDRkMzEyYWJlNjBi%0AYmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--c8ecacf431bb5cda9b3131cdad03f7f721ff31b0
+  Parameters: {"action"=>"auth", "controller"=>"application", "redirect_add"=>"/bkmafolders"}
+Redirected to http://d0069/auth_api/auth?apikey=e70c7c17e8eb5f501539a8aac88909c2&secret=b7270e7d219df01ed075bd788338c1ce&redirect_add=/bkmafolders
+Completed in 0.00010 (10000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/auth?redirect_add=%2Fbkmafolders]
+
+
+Processing ApplicationController#get_auth_info (for 172.16.41.65 at 2008-05-21 21:44:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--8e879c31aec0e6be57327db795a1480ac750c930
+  Parameters: {"cert"=>"a9fcdc287821d32b1cdfc0ce4cb8a9a6bc6575f9", "action"=>"get_auth_info", "controller"=>"application"}
+
+
+NoMethodError (private method `gsub' called for nil:NilClass):
+    c:/ruby/lib/ruby/1.8/uri/common.rb:289:in `escape'
+    /app/controllers/application.rb:63:in `get_auth_info'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:282:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/configurator.rb:281:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:128:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/../lib/mongrel/command.rb:212:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.3-x86-mswin32/bin/mongrel_rails:281
+    c:/ruby/bin/mongrel_rails:19:in `load'
+    c:/ruby/bin/mongrel_rails:19
+
+Rendering C:/ruby/bkma/public/500.html (500 Internal Server Error)

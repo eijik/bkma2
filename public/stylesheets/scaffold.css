@@ -1,0 +1,488 @@
+body {
+  color: #000;
+  padding: 0;
+  margin-top:auto;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  font-family:  Arial,'ＭＳ Ｐゴシック',sans-serif ;
+  font-size: 16px;
+  background:transparent url(/images/side.GIF) repeat-y 50% 50%;
+}
+
+#container {
+  width: 831px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0;
+  text-align: left;
+
+}
+
+#header {
+  height: 153px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#logo{
+  position: relative;
+  height: 73px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background:transparent url(/images/sbbookmark_logo.png) ;
+}
+
+
+.login-message{
+  font-size: 90%;
+  color: #fff;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+#login-name{
+  font-family:  PicoBlack,'ＭＳ Ｐゴシック',sans-serif ;
+  margin: 0px 5px;
+  font-weight: bolder;
+  font-size: 130%;
+}
+
+#nav{
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background:#f0eee1;
+}
+#nav-icon{
+  float:left;
+  height:80px;
+
+}
+
+#login-button{
+  margin:5px;
+  float:right;
+}
+
+#wrap {
+}
+
+
+#main {
+  width: 591px;
+  padding: 20px 0px 20px 20px;
+  text-align: left;
+  float : left;
+}
+
+#main-wide {
+  padding: 20px 40px;
+  text-align: left;
+}
+
+
+#all-comment {
+  padding: 20px;
+  text-align: left;
+  font-size: 80%;
+  display: block; 
+}
+
+.background-color-blue {
+  background:#edf1fd;
+}
+
+.background {
+  border-top: thin solid #0099ff;
+  background:#edf1fd;
+  padding: 20px;
+  display: block;  
+}
+.comment-line {
+  display: block; 
+}
+
+.comment-box-left {
+  padding: 0px 10px;
+  float: left;
+  margin-buttom: 0px;
+}
+
+.comment-box-center {
+  width: 150px;
+  padding: 0px;
+  float: left;
+  margin-buttom: 0px;
+}
+
+.comment-box-right {
+  padding: 0px;
+  float: right;
+  text-align:left;
+
+}
+
+
+.right-object{
+text-align:right;
+  margin-right:40px;
+}
+
+
+.main-title{
+  padding-left: 20px;
+  padding-bottom: 5px;
+  color: #996666;
+  font-weight: bolder;
+  font-size: 14pt;
+}
+
+
+#sidebar {
+  top: 0px;
+  left: 0px;
+  float : right;
+  width :200px;
+  padding: 10px;
+  text-align: left;
+}
+
+.side-contents{
+  padding: 10px;
+  text-align: left;
+}
+
+.side-title{
+  padding-left: 10px;
+  color: #996666;
+  font-weight: bolder;
+  font-size: 12pt;
+}
+
+.side-wrap{
+  border-top: solid #0099ff; 
+  border-left: thin solid #0099ff; 
+}
+
+.side-text{
+  margin: 10px;
+  font-size: 11pt;  
+}
+
+
+#notice {
+  color:green;
+}
+
+img {
+  border: 0px;
+ display: inline;
+}
+
+
+
+.help-back{
+  padding:20px 40px 0px 20px;
+  font-size: 90%;
+}
+
+.alert-word {
+  font-size: 85%;
+  color:red;
+  font-weight: bolder;
+}
+
+.help-title {
+  padding-left: 10px;
+  margin: 10px 20px 5px 10px;
+  font-weight: bold;
+  color:#095894;
+  border-bottom: thin solid #0099ff; 
+  border-left:  solid #0099ff; 
+}
+.help-data {
+  margin: 20px 20px 0px;
+  padding: 0px 0px;
+}
+.help-method {
+  margin: 15px 0px 0px 20px;
+  padding: 10px;
+  border:thin solid #0099ff;
+}
+.indent-out{
+  text-indent: -15px;
+  padding-left: 15px;
+}
+.help-step{
+  margin: 10px 40px 0px; 
+}
+
+#tag {
+}
+
+.tag-question {
+
+  font-size: 80%;
+}
+
+/****************************** bookmarklist **********************************/
+
+dl.bookmarklist {
+  line-height: 1.2em;
+  margin : 0px 15px 0px 0px;
+  padding: 0;
+  display: block;
+}
+
+dl.bookmarklist dl,
+dl.bookmarklist dt,
+dl.bookmarklist dd {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
+dl.bookmarklist dt.bookmark {
+  font-weight: bold;
+  display: inline;
+  list-style-type: none;
+  margin-top: 1.2em;
+  color:#fff;
+}
+
+dl.bookmarklist dd dt {
+  display: inline;
+}
+
+dl.bookmarklist dd dt:first-child {
+  margin-left: 0;
+}
+
+dl.bookmarklist dd dt span.label,
+dl.bookmarklist dd dd a span.label,
+dl.bookmarklist dd dt.domain {
+  display: none;
+}
+
+dl.bookmarklist dd dt.timestamp span.label2 {
+  display: inline;
+}
+
+
+dl.bookmarklist dd dt,
+dl.bookmarklist dd dd {
+  display: inline;
+  font-size: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+dl.bookmarklist dd dd.domain {
+  font-size: 80%;
+}
+
+dl.bookmarklist dd dd.domain a.domain {
+  color: #999;
+}
+
+dl.bookmarklist dd dd.timestamp {
+  color: #666;
+}
+
+dl.bookmarklist dd {
+  margin: 0;
+  margin-left: 1em;
+}
+
+dl.bookmarklist dd.comment {
+  margin-top: 3px;
+  color: #0084E1;
+  font-size: 80%;
+  padding: 0px;
+}
+
+dl.bookmarklist dd.content {
+  margin-top: 0.5em;
+  font-size: 80%;
+}
+
+dl.bookmarklist dd.comment a {
+  color: #0084E1;
+}
+
+dl.bookmarklist dd.comment strong, 
+dl.bookmarklist dd.content strong {
+  background: yellow;
+}
+
+.help-method-title,
+dl.bookmarklist dd dd.users em {
+  color:#FF0000;
+  background-color:pink;
+  font-weight: bold;
+  display: inline;
+  font-style: normal;
+}
+
+dl.bookmarklist dd dd.users a{
+  color:#095894;
+}
+
+.help-step-title,
+dl.bookmarklist dd dd.users em a{
+  color:#095894;
+}
+
+.help-step-title,
+dl.bookmarklist dd dd.users strong {
+  background-color:#8DCEFF;
+  font-weight: bold;
+  font-style: normal;
+  display: inline;
+}
+
+dl.bookmarklist dd dd.users strong a {
+  color: #002440;
+}
+
+dl.bookmarklist dd dd.delete form.delete {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+
+dl.bookmarklist dd dd.bkm em {
+  color:#006EDD;
+  background-color:#C8E7FF;
+  font-weight: bold;
+  display: inline;
+  font-style: normal;
+  text-decoration:underline;
+}
+
+
+
+/******************** link ********************/
+a{
+color:#095894;
+text-decoration:none;
+word-break:break-all ;
+}
+
+a:link{
+color:#095894;
+text-decoration:none;
+word-break:break-all ;
+}
+
+a:visited {
+color:#487FA9;
+text-decoration:none;
+word-break:break-all ;
+}
+
+a:hover {
+color:#0B8CEE;
+text-decoration:underline;
+word-break:break-all ;
+}
+
+a, a:link, a:visited, a:hover {
+word-break:break-all ;
+word-wrap:break-word ;
+}
+
+
+
+/******************************** dialog ********************************/
+
+
+.dialog .top .left{
+  background:transparent url("/images/dialog_lt.png") no-repeat 0px 0px;
+  height:19px;
+  padding-left: 20px;
+}
+
+.dialog .top .center{
+  background:transparent url("/images/dialog_ct.png") repeat-x;
+  height:19px;
+}
+
+.dialog .top .right{
+  background:transparent url("/images/dialog_rt.png") no-repeat right ;
+  height:19px;
+}
+
+.dialog .middle .left{
+  padding-left: 20px;
+/*  padding-right: 20px;*/
+  background:transparent url("/images/dialog_lm.png") repeat-y;
+}
+
+.dialog .middle .center{
+  background:transparent;
+}
+
+.dialog .middle .right{
+  background:transparent url("/images/dialog_rm.png") repeat-y right;
+}
+
+.dialog .bottom .left{
+  background:transparent url("/images/dialog_lb.png") no-repeat 0px 0px;
+  height:52px;
+  padding-left: 19px;
+}
+
+.dialog .bottom .center{
+  background:transparent url("/images/dialog_cb.png") repeat-x ;
+  height:52px;
+}
+
+.dialog .bottom .right{
+  background:transparent url("/images/dialog_rb.png") no-repeat right;
+  height:52px;
+}
+
+
+
+
+/************************** page number ***************************/
+  .pagination {
+    padding: 3px;
+    margin: 3px;
+    text-align: right;
+    font-size:70%;
+
+  }
+  .pagination a {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #aaaadd;
+    text-decoration: none;
+    color: #000099;
+  }
+  .pagination a:hover, .pagination a:active {
+    border: 1px solid #000099;
+    color: #000;
+  }
+  .pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #000099;
+    font-weight: bold;
+    background-color: #000099;
+    color: #FFF;
+  }
+  .pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    color: #ddd;
+  }
+

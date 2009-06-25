@@ -1,0 +1,23 @@
+<div id="header">
+
+  <div id="logo">
+    <div class="login-message"><%= h_login %></div>
+  </div>
+
+  <div id="nav">
+    <div id="nav-icon">
+      <%= image_tag("/images/nav_bar.png") %>
+      <%= link_to(image_tag("/images/nav_everyone.png"),:controller=>"bkmafolders" ,:action=>"index") %>
+      <%= image_tag("/images/nav_bar.png") %>
+      <%= h_everyone_path %>
+      <%= h_check_path %>
+      <%= link_to(image_tag("/images/nav_help.png"),:controller=>"helps" ,:action=>"index") %>
+      <%= image_tag("/images/nav_bar.png") %>
+    </div><!-- end nav-icon -->
+    <div id="login-button">
+      <div><%= h_login_button_up %></div>
+      <div><%= h_login_button_down %></div>
+    </div>
+  </div><!-- end nav -->
+
+</div><!-- end header -->

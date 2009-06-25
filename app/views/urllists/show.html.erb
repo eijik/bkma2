@@ -1,0 +1,117 @@
+
+<% for bookmarklist in @bookmarklists %>
+
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+
+			<dl class="bookmarklist" >
+			    <dt class="bookmark"><%= link_to bookmarklist.title,bookmarklist.url,:class =>"domain",:target=>"_blank" %></dt>
+			    <dd>
+			      <dl>
+				  <dd class="domain"><%= link_to nil,bookmarklist.url,:class =>"domain",:target=>"_blank" %></dd>
+			          <dd class="users">
+			             <% for users_count in @users_count %>
+			                <% if bookmarklist.id==users_count.urllist_id then %>
+			                   <em><%=users_count.users_count_num %> user</em>
+			                <% end %>
+			             <% end %>
+			          </dd>
+
+			          <% if @edit_delete_flg then %>
+			            <dd class="edit">
+					<%= link_to(image_tag("/images/edit.gif",:alt=>"編集"),edit_urllist_path(bookmarklist.id) ,:method=>:get) %>
+				    </dd>
+			            <dd class="delete">
+					<%= link_to(image_tag("/images/delete.gif",:alt=>"削除"),urllist_path(bookmarklist.id) ,:method=>:delete,:confirm=>"削除してもいいですか？") %>
+				    </dd>
+			          <% elsif session[:login] then %>
+			            <dd class="edit">
+					<%= link_to(image_tag("/images/reg_bookmark.png",:alt=>"自分のブックマークへ登録"),edit_urllist_path(bookmarklist.id) ,:method=>:get) %>
+				    </dd>
+
+				  <% end %>
+
+
+
+
+			      </dl>
+			    </dd>
+
+			    <dd class="comment">
+			      <%=h_each_other_comment_U(bookmarklist,session[:login],0,"自分のコメント：")%><br>
+			      <%=h_each_other_comment_U(bookmarklist,session[:login],1,"みんなのコメント：")%>
+			    </dd>
+
+<br><br>
+			    <dd>
+				<dl>
+				  <dt class="timestamp"><span class="label2">登録日</span></dt>
+				  <dd class="timestamp">
+					<%=h bookmarklist.created_at.strftime("%y/%m/%d %H:%M") %>
+				  </dd>
+				</dl>
+				<dl>
+				  <dt class="timestamp"><span class="label2">登録者</span></dt>
+				  <dd class="timestamp">
+					<%=h bookmarklist.create_person_name %>
+				  </dd>
+				</dl>
+				<dl>
+				  <dt class="timestamp"><span class="label2">更新日</span></dt>
+				  <dd class="timestamp">
+					<%=h bookmarklist.updated_at.strftime("%y/%m/%d %H:%M") %>
+				  </dd>
+				</dl>
+				<dl>
+				  <dt class="timestamp"><span class="label2">更新者</span></dt>
+				  <dd class="timestamp">
+					<%=h bookmarklist.update_person_name %>
+				  </dd>
+				</dl>
+			   </dd>
+			</dl><!--end bookmarklist-->
+
+
+		  </div>
+		</div>
+	      </div>
+	    </div><!--end middle-->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+
+<% end %>
+
+
+	<div id="all-comment">
+	  <div class="main-title">このエントリーをブックマークしているみんな</div>
+	  <div class="background">
+		  <% for bookmark_user in @bookmark_users %>
+		    <div class="comment-line">
+			<%= bookmark_user.created_at.strftime("%Y/%m/%d ") %>
+			<%= link_to bookmark_user.login, bkmafolder_path(h_uri_encode(bookmark_user.login)) %>
+			<%= h_each_other_comment(bookmark_user,bookmark_user.login,0) %>
+		    </div>
+		  <% end %>
+	  </div>
+	</div>
+

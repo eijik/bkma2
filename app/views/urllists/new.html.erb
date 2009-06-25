@@ -1,0 +1,42 @@
+
+<% form_for @urllist ,:url=>urllists_path  do |f|%>
+
+  <p>
+    <b>URL:</b>
+    <%= @urllist.url %>
+    <%= f.hidden_field :url %>
+  </p>
+
+  <p>
+    <b>タイトル:</b>
+    <%= f.text_field :title %>
+  </p>
+
+
+  <div class="tag-question">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ワードを[○△] で囲むとタグになります。タグの説明は<%= link_to "ここをクリック!",{:controller=>:helps ,:anchor=>"tag"}, :target => "_blank" %>
+  </div>
+
+  <p>
+    <b>自分のコメント:</b>
+    <%= text_field_tag 'comment',nil, :size=>80 %><br>
+  </p>
+
+
+
+   <div id="candidates_list"></div>
+   <div id="tags_completion"></div>
+   <div id="othertags_list"></div>
+   <div id="tags_list"></div>
+<br>
+
+  <p>
+    <%= f.submit "登録" %>
+  </p>
+<% end %>
+
+  <p>
+    <b>作成日</b><br />
+    <%= Time.now.strftime("%Y/%m/%d ") %>
+  </p>
+
+<%= link_to 'トップへ' , bkmafolders_path %>

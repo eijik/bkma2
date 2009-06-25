@@ -1,0 +1,6 @@
+
+
+<% for tags in @tags %>
+   <%= h_encoding_tag_link(tags.comment,false)%>
+   <sub><%= tags.comment_count %></sub>
+<% end %>

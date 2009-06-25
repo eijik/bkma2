@@ -1,0 +1,65 @@
+
+<%= render :partial=>"layouts/login" %>
+
+
+
+  <div id="main">
+    <div class="main-title">最近UPされたブックマーク <%=link_to image_tag("/images/rss2.png",:alt=>"最近UPされたブックマークのRSS") , bkmafolders_path + ".rss" %></div>
+    <%= render :partial=>"bookmark_list" %>
+  </div>  <!-- end main -->
+
+
+
+
+	<div id="sidebar">
+
+	  <div class="side-contents">
+	    <div class="side-title">人気ブックマーク</div>
+	    <div class="side-wrap">
+	      <div class="side-text">
+	        <% for users_count in @users_count %>
+	          <dl class="bookmarklist" >
+	            <dd>
+	              <dl>
+	                <dd><%= link_to users_count.urllist.title ,urllist_path(users_count.urllist_id) %></dd>
+	                <dd class="users"><em><%=users_count.users_count_num%> user</em></dd>
+	              </dl>
+	            </dd>
+	          </dl>
+	        <% end %>
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="side-contents">
+	    <div class="side-title">ブックマークしている<br>みんな</div>
+	    <div class="side-wrap">
+	      <div class="side-text">
+      	        <% for bkmafolder in @bkmafolders %>
+	          <dl class="bookmarklist" >
+	            <dd>
+	              <dl>
+	                <dd>
+	                  <%= link_to bkmafolder.login, bkmafolder_path(h_uri_encode(bkmafolder.login))  %></dd>
+	                <dd class="bkm"><em><%= bkmafolder.bookmark_count %> bkm</em></dd>
+	              </dl>
+	            </dd>
+	          </dl>
+	        <% end %>
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="side-contents">
+	    <div class="side-title">みんなの人気タグ</div>
+	    <div class="side-wrap">
+	      <div class="side-text">
+	        <%= render_component :controller=>"tags",:action=>"index" %>
+	      </div>
+            </div>
+	  </div>
+
+	</div><!-- end sidebar -->
+

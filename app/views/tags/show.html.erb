@@ -1,0 +1,19 @@
+<%= render :partial=>"layouts/login" %>
+
+<div id="main">
+  <div class="main-title"><%= link_to 'みんなのブックマーク',bkmafolders_path %>　＞　<%= URI.decode(params[:id]) %></div>
+  <%= render :partial=>"bkmafolders/bookmark_list" %>
+</div><!--end main-->
+
+
+
+	<div id="sidebar">
+	  <div class="side-contents">
+	    <div class="side-title">みんなの人気タグ</div>
+	    <div class="side-wrap">
+	      <div class="side-text">
+	        <%= render_component :controller=>"tags",:action=>"index" %>
+	      </div>
+            </div>
+	  </div>
+	</div><!-- end sidebar -->

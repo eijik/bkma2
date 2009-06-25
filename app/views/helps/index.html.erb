@@ -1,0 +1,264 @@
+<%= render :partial=>"layouts/login" %>
+
+<div id="main-wide">
+<div class="main-title">SBブックマークとは？</div>
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+			<div class="help-back">
+			  SBブックマークは社内のURLやPPT・エクセルなどのファイルをブックマークとして登録できます。
+			　登録したブックマークへは自分のコメントやタグで整理ができます。
+			　<span class="alert-word">※タグとはキーワードのようなものです。</span>
+			　ブックマークにタグをつけておくことで、タグで集計ができます。
+			  この資料を○△会社向けに使用したとか、こんな提案をしたというタグやコメントを残しておけば、後からみんなで参照ができます。
+			</div>
+		  </div>
+		</div>
+	      </div>
+	    </div><!--end middle-->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+<br><br>
+
+<div class="main-title">初めての方へ</div>
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+		    <div class="help-back">
+
+			<div class="help-title">ブックマークを参照してみる。</div>
+			  <div class="help-data">参照のみならログインする必要はありません。TOPページからリンクをたどって参照してください。</div>
+<br>
+<br>
+			<div class="help-title">ブックマークの登録・編集をしてみる。</div>
+			  <div class="help-data">ブックマークの新規登録・編集をするためにはログインをしてください。</div><br>
+
+			<div class="help-step">
+			  <div class="help-data">
+			    <span class="help-step-title">ステップ１</span>  ログインしてみる
+			    <div class="help-data">
+				このブックマークのアカウントはSBポータルの認証を使用しています。<br>
+				よってこのサイトでのアカウント作成は必要ありません。
+			    </div>
+			    <div class="help-data">
+					<b>①SBポータルのアカウントをまだ持っていない。</b><br>
+					　　こちらからSBポータルのアカウントを作成して下さい。⇒<%= link_to(image_tag("/images/signup.png",:size=>"100x35"),"http://d0069/user/signup") %><br><br>
+					　　アカウント作成後に下のログインボタンよりログインしてください。<br>
+<br>
+<br>
+					<b>②SBポータルのアカウントを既に持っている。</b><br>
+					　　		こちらからログインしてください。⇒<%= link_to(image_tag("/images/login_button.png",:size=>"100x35"),:controller=>"auth" ,:redirect_add =>'/bkma' + request.path) %>
+
+			    </div><!-- help-data -->
+			  </div><!-- help-data -->
+			</div><!-- help-step -->
+
+<br><br>
+
+			<div class="help-step">
+			  <div class="help-data">
+			    <span class="help-step-title">ステップ２</span>  実際にブックマークを登録・編集してみる
+			    <div class="help-data">
+				ブックマークする対象がURLなのかファイル・フォルダかで、<br>登録の方法が少し異なります。
+			    </div>
+			    <div class="help-method background-color-blue">
+			      <span class="help-method-title">方法１</span>　新規登録画面からブックマーク登録する（URLとファイル・フォルダ共通）<br><br>
+			        <div class="help-data">
+				  右上メニュー<%=image_tag("/images/nav_bkma_reg.png",:size=>"50x50")%>のメニューから登録。<br>
+				  <span class="alert-word">※ログインしていないと、ブックマーク登録ボタンが表示されません。</span>
+			        </div>
+			    </div>
+
+<br><br>
+			    <div class="help-data">
+			      しかし毎回WEBの画面を開いて登録するのは、面倒という人向けに下記の便利な２つの方法をお勧めします。<br>
+			    </div>
+<br><br>
+
+			    <div class="help-method  background-color-blue">
+			      <span class="help-method-title">方法２</span>　ブックマークレットからURLをブックマーク登録
+			      <div class="help-data">
+				<b><%= link_to("ブックマークレット","javascript:window.location='http://d0069/bkma/auth?redirect_add=/bkma/urllists/new?urllist[url]='+escape(location.href);") %></b><br>
+<br>
+				<div class="indent-out">①上記のリンク先をお気に入りに入れてください。（リンク先を右クリック＞お気に入りに追加）</div>
+				<div class="indent-out">②セキュリティの警告が出ますが、"はい"をクリックしてください。</div>
+				<div class="indent-out">③登録したいサイトの画面を開き、先ほどお気に入りに登録したブックマークレットを押してください。</div>
+				<div class="indent-out">④登録画面へ移ります。後は方法１と同じ。</div>
+			      </div>
+			    </div>
+
+			    <div class="help-method  background-color-blue">
+			      <span id="sendtobookmark" class="help-method-title">方法３</span>　共有フォルダの中のファイルやフォルダをブックマーク登録
+			      <div class="help-data">
+				<b><%= link_to "ファイルのダウンロード","javascripts/send_to_bookmark.js" %></b><br><br>
+				<div class="indent-out">①上記のボタンよりファイルをダウンロードしてください。</div>
+				<div class="indent-out">② "C:\Documents and Settings\(Windowsを立ち上げるときのログイン名)\SendTo" の下へダウンロードしたファイルを置いてください。</div>
+				<div class="indent-out">③ファイル名をわかりやすい名前に変更しておくといいと思います。ここでは"ブックマークに追加.js"としました。</div>
+				<div class="indent-out">④エクスプローラを立ち上げ、ブックマーク登録したいファイルもしくはフォルダを選択して、右クリックメニューの"送る"＞ブックマークに追加.js をクリック。</div>
+				<div class="alert-word">※ローカルPCのアドレスではなく、必ず\\sb-doc1などのシェアフォルダ以下を指定してください。</div><br>
+				<%=image_tag("/images/add_to_explorer.png")%><br><br><br>
+				<div class="indent-out">④登録画面へ移ります。後は方法１と同じ。</div>
+			      </div>
+			    </div>
+
+			  </div><!-- help-data -->
+			</div><!-- help-step -->
+
+<br><br><br>
+
+			<div class="help-step">
+			  <div class="help-data"><span class="help-step-title">ステップ３</span>　登録・編集画面での登録方法<br>
+
+			    <div class="help-method  background-color-blue">
+			      <span id="tag" class="help-method-title">タグについて</span>
+			        <div class="help-data">
+			          タグを使うとブックマークを自分用に分類することができます。<br>
+			          タグとは各ブックマークを分類するためのカテゴリーみたいなものです。<br>
+				  ブックマークを象徴するタグを登録しておくと、検索するときにたどり着きやすくなります。
+				</div>
+			    </div>
+<br><br>
+
+			    <div class="help-data">
+				自分のコメントを登録する際、半角文字の "[" と "]" で囲まれた単語はタグとして認識され登録されます。<br>
+				下の例では[これはいける]と[みんなでみてちょ]というタグが登録されます。<br>
+				また、自分が以前登録したタグ一覧が下のほうに表示されています。クリックすることで、コメント枠に自動挿入されます。<br>
+			          "[" と "]" 以外の文字は全てコメントとして登録されます。なお、半角のカンマで区切るとコメントを別のデータとして認識します。
+			    </div>
+			    <div class="help-data">
+			      <%=image_tag("/images/new_tag.png")%>
+			    </div>
+
+
+			   </div><!-- help-data -->
+			</div><!-- help-step -->
+
+
+
+		    </div><!-- help-back -->
+		  </div><!-- right -->
+		</div>
+	      </div>
+	    </div><!-- middle -->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+
+<br><br>
+
+<div class="main-title">よくある質問</div>
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+			<div class="help-back">
+				Q.タグやコメントの検索はできないのですか？<br>
+				A.今後のバージョンUPにて対応予定です。
+			</div>
+		  </div>
+		</div>
+	      </div>
+	    </div><!--end middle-->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+
+<br><br>
+
+<div class="main-title">その他注意事項</div>
+	  <div class="dialog">
+
+	    <div class="top">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="middle">
+	      <div class="left">
+	        <div class="center">
+		  <div class="right">
+			<div class="help-back">
+			・ローカルPCのファイルはブックマークできません。<br><br>
+			・ファイルは移動したら追跡できないので、再度移動先にてブックマークを作成してください。<br><br>
+			・ブックマークレットやエクスプローラから送るで登録した場合にファイルやフォルダ名に "<b>&</b>" が入っていると、<br>そこでアドレスが切れてしまいます。"<b>&</b>"が入っているアドレスを登録したい場合には、このサイトの新規登録から登録してください。<br><br>
+			・基本的にブラウザはIEを使用して下さい。IE以外だとリンクからファイルやフォルダを開くことができませんので。<br>
+			</div>
+		  </div>
+		</div>
+	      </div>
+	    </div><!--end middle-->
+
+	    <div class="bottom">
+	      <div class="left">
+	        <div class="center">
+	          <div class="right"></div>
+		</div>
+	      </div>
+	    </div>
+
+	  </div><!--end dialog-->
+
+
+
+
+</div>
