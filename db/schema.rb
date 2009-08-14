@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 5) do
 
   create_table "bkmafolders", :force => true do |t|
     t.integer  "urllist_id"
     t.string   "login"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "comments", :force => true do |t|
@@ -25,6 +26,22 @@ ActiveRecord::Schema.define(:version => 3) do
     t.integer  "tag_flg"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "open_id_authentication_associations", :force => true do |t|
+    t.integer "issued"
+    t.integer "lifetime"
+    t.string  "handle"
+    t.string  "assoc_type"
+    t.binary  "server_url"
+    t.binary  "secret"
+  end
+
+  create_table "open_id_authentication_nonces", :force => true do |t|
+    t.integer "timestamp",  :null => false
+    t.string  "server_url"
+    t.string  "salt",       :null => false
   end
 
   create_table "urllists", :force => true do |t|
@@ -34,6 +51,16 @@ ActiveRecord::Schema.define(:version => 3) do
     t.datetime "updated_at"
     t.string   "create_person_name"
     t.string   "update_person_name"
+    t.integer  "user_id"
+    t.integer  "create_user_id"
+    t.integer  "update_user_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "identity_url"
+    t.string   "login"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

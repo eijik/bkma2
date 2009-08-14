@@ -41,7 +41,7 @@
 	            <dd>
 	              <dl>
 	                <dd>
-	                  <%= link_to bkmafolder.login, bkmafolder_path(h_uri_encode(bkmafolder.login))  %></dd>
+	                  <%= link_to bkmafolder.user.login, bkmafolder_path(bkmafolder.user_id)  %></dd>
 	                <dd class="bkm"><em><%= bkmafolder.bookmark_count %> bkm</em></dd>
 	              </dl>
 	            </dd>

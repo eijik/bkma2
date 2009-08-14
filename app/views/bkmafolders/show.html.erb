@@ -1,13 +1,13 @@
 <%= render :partial=>"layouts/login" %>
 <div id="main">
-   <div class="main-title"><%= link_to 'みんなのブックマーク',bkmafolders_path %>　＞　<%= URI.decode(params[:id]) %></div>
+   <div class="main-title"><%= link_to 'みんなのブックマーク',bkmafolders_path %>　＞　<%= @user_name %></div>
    <%= render :partial=>"bookmark_list" %>
 </div><!-- end main -->
 
 	<div id="sidebar">
 
 	  <div class="side-contents">
-	    <div class="side-title"><%= URI.decode(params[:id]) %>さんのタグ</div>
+	    <div class="side-title"><%= @user_name %>さんのタグ</div>
 	    <div class="side-wrap">
 	      <div class="side-text">
 		<% for tags in @tags %>

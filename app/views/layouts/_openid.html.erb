@@ -1,0 +1,5 @@
+
+<%=link_to(image_tag("/images/mixi_login.gif"),{:controller=>"auth",:openid_url => "http://mixi.jp/",:redirect_add => request.url,:require => :nickname })   %>
+<%=link_to(image_tag("/images/google150x48.png"),{:controller=>"auth",:openid_url => "https://www.google.com/accounts/o8/id",:redirect_add => request.url,:require => 'http://axschema.org/namePerson/first'})   %>
+<%=link_to(image_tag("http://i.yimg.jp/images/login/btn/btnXSLogin.gif"),{:controller=>"auth",:openid_url => "yahoo.co.jp",:redirect_add => request.url,:require => :nickname})   %>
+

@@ -36,7 +36,7 @@
 			            <dd class="delete">
 					<%= link_to(image_tag("/images/delete.gif",:alt=>"削除"),urllist_path(bookmarklist.id) ,:method=>:delete,:confirm=>"削除してもいいですか？") %>
 				    </dd>
-			          <% elsif session[:login] then %>
+			          <% elsif session[:login_no] then %>
 			            <dd class="edit">
 					<%= link_to(image_tag("/images/reg_bookmark.png",:alt=>"自分のブックマークへ登録"),edit_urllist_path(bookmarklist.id) ,:method=>:get) %>
 				    </dd>
@@ -50,8 +50,8 @@
 			    </dd>
 
 			    <dd class="comment">
-			      <%=h_each_other_comment_U(bookmarklist,session[:login],0,"自分のコメント：")%><br>
-			      <%=h_each_other_comment_U(bookmarklist,session[:login],1,"みんなのコメント：")%>
+			      <%=h_each_other_comment_U(bookmarklist,session[:login_no],0,"自分のコメント：")%><br>
+			      <%=h_each_other_comment_U(bookmarklist,session[:login_no],1,"みんなのコメント：")%>
 			    </dd>
 
 <br><br>
@@ -65,7 +65,7 @@
 				<dl>
 				  <dt class="timestamp"><span class="label2">登録者</span></dt>
 				  <dd class="timestamp">
-					<%=h bookmarklist.create_person_name %>
+					<%= @create_user_name %>
 				  </dd>
 				</dl>
 				<dl>
@@ -77,7 +77,9 @@
 				<dl>
 				  <dt class="timestamp"><span class="label2">更新者</span></dt>
 				  <dd class="timestamp">
-					<%=h bookmarklist.update_person_name %>
+                                        <% if bookmarklist.update_user_id then%>
+                                        <%= @update_user_name %>
+                                        <% end %>
 				  </dd>
 				</dl>
 			   </dd>
@@ -108,8 +110,8 @@
 		  <% for bookmark_user in @bookmark_users %>
 		    <div class="comment-line">
 			<%= bookmark_user.created_at.strftime("%Y/%m/%d ") %>
-			<%= link_to bookmark_user.login, bkmafolder_path(h_uri_encode(bookmark_user.login)) %>
-			<%= h_each_other_comment(bookmark_user,bookmark_user.login,0) %>
+			<%= link_to bookmark_user.user.login, bkmafolder_path(bookmark_user.user_id) %>
+			<%= h_each_other_comment(bookmark_user,bookmark_user.user_id,0) %>
 		    </div>
 		  <% end %>
 	  </div>

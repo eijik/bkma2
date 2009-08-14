@@ -8,80 +8,72 @@ class ApplicationController < ActionController::Base
     include MyEncrypt
     $KCODE = "UTF"
      
-     @@solt='softbrain'
      
-  #dev
-     @@apikey='34facb2d098b050e267ab477ca98bd8e'
-     @@sec= Digest::MD5.hexdigest('b7526e7a93ef093a1d100616b4d907f9')
-     
-  #real
-     #@@apikey='e70c7c17e8eb5f501539a8aac88909c2'
-     #@@sec= Digest::MD5.hexdigest('206984f759bc6db12d60fde513dc213c')
-     
-      before_filter :put_session_login
-      def put_session_login
-         session[:login]= decrypt(params[:login],'softbrain') if params[:login] !=nil
+      before_filter :session_login
+      def session_login
+        if params["openid.claimed_id"] && session[:login_no] == nil  then
+        
+           #session[:identity_url] = params["openid.claimed_id"] 
+           login_name ||= params["openid.sreg.nickname"] 
+           login_name ||= params["openid.ext1.value.ext0"] 
+           login_name ||="NoName"
+
+           unless @user = User.find_by_identity_url(params["openid.claimed_id"])
+              @user = User.new
+              @user.login = login_name
+              @user.identity_url = params["openid.claimed_id"] 
+              @user.save
+            end
+            session[:login_no]=@user.id
+            
+          if  login_name !="NoName" then
+              @user = User.find(session[:login_no])
+              @user.update_attributes(:login=>login_name)
+          end
+            
+        end
       end
 
   helper :all # include all helpers, all the time
 
-  # See ActionController::RequestForgeryProtection for details
-  # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'c8c944c910ad15aabcc4acb4901a65f8'
    
-   
     def auth
-      #リンク元のアドレスを格納
-      #redirect_add=URI.encode(params[:redirect_add].tosjis,"^_.!~*'()-;/?:@&=+$,\[]") #if params[:redirect_add]
-      redirect_add = URI.escape(params[:redirect_add])
-     
-      #real
-      #redirect_to 'http://d0069/auth_api/auth?apikey=' + @@apikey + '&secret=' + @@sec + '&redirect_add=' + redirect_add
-      #dev
-      redirect_to 'http://localhost:3001/auth_api/auth?apikey=' + @@apikey + '&secret=' + @@sec + '&redirect_add=' + redirect_add
-      return
+     if using_open_id?
+        open_id_authentication
+      else
+        flash[:notice] = "failed login!"
+        redirect_to :back
+      end
     end
     
-    
-    def get_auth_info
-        parser = JsonParser.new
-        @response = nil
-        cert = params[:cert]
-       
-       #real
-        #Net::HTTP.start('d0069',80) {|http|
-        #    @response = http.get('http://d0069/auth_api/json?apikey=' + @@apikey +'&secret=' + @@sec + '&cert=' + cert)
-        #    }
-       #dev
-         Net::HTTP.start('localhost',3001) {|http|
-            @response = http.get('http://localhost:3001/auth_api/json?apikey=' + @@apikey +'&secret=' + @@sec + '&cert=' + cert)
-             }
-               
-       #This enc is encrypted login name ,so it is essential parameter.
-       enc = encrypt(parser.parse(@response.body[1,@response.body.size-2])['login'], @@solt) 
-       
-       redirect_add = URI.escape(params[:redirect_add])
-       
-      if params[:redirect_add].index("?") then
-         redirect_to  redirect_add  + '&login=' + enc
-      else
-         redirect_to  redirect_add  + '?login=' + enc
-      end 
-      
-    end 
-   
     def logout
       reset_session
       redirect_to  bkmafolders_path
     end
     
-    def logout_login
-     reset_session
-     #dev
-     redirect_to "http://localhost:3001/user/logout"
-     #real
-     #redirect_to "http://d0069/user/logout"
-     
-    end
+    protected
+
+      def open_id_authentication
+        authenticate_with_open_id(params[:openid_url],:return_to => params[:redirect_add],:required => params[:require]) do |result, identity_url,registration|
+         if result.successful?
+            successful_login
+          else
+            failed_login result.message
+          end
+        end
+      end
+    
+    
+    private
+      def successful_login
+        flash[:notice] = "got login!!! #{session[:login]}"
+         redirect_to bkmafolders_path
+      end
+
+      def failed_login(message)
+        flash[:notice]= message
+        redirect_to bkmafolders_path
+      end
 
 end

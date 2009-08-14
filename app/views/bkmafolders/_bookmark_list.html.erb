@@ -43,7 +43,7 @@
 			          <% end %>
 
 				<% if params[:id] then %>
-			          <% if session[:login]==URI.decode(params[:id]) then %>
+			          <% if session[:login_no]==params[:id] then %>
 			            <dd class="edit">
 					<%= link_to(image_tag("/images/edit.gif",:alt=>"編集"),edit_urllist_path(bookmarklist.urllist.id) ,:method=>:get) %>
 				    </dd>
@@ -58,8 +58,8 @@
 			    </dd>
 
 			    <dd class="comment">
-			      <%=h_each_other_comment(bookmarklist,session[:login],0,"自分のコメント：")%><br>
-			      <%=h_each_other_comment(bookmarklist,session[:login],1,"みんなのコメント：")%>
+			      <%=h_each_other_comment(bookmarklist,session[:login_no],0,"自分のコメント：")%><br>
+			      <%=h_each_other_comment(bookmarklist,session[:login_no],1,"みんなのコメント：")%>
 			    </dd>
 			</dl><!--end bookmarklist-->
 

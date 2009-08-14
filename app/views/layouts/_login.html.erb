@@ -1,6 +1,7 @@
 <div id="header">
 
   <div id="logo">
+    <div><%= flash[:notice] %></div>
     <div class="login-message"><%= h_login %></div>
   </div>
 
@@ -15,8 +16,7 @@
       <%= image_tag("/images/nav_bar.png") %>
     </div><!-- end nav-icon -->
     <div id="login-button">
-      <div><%= h_login_button_up %></div>
-      <div><%= h_login_button_down %></div>
+      <div><%= h_login_button %></div>
     </div>
   </div><!-- end nav -->
 
